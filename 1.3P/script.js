@@ -1,8 +1,6 @@
-function greet(name){
-  return `Hello, ${name}!`;
-}
+const messageParagraph = document.getElementById('message');
+const changeButton = document.getElementById('changeButton');
 
-const message = greet("Sarah");
-console.log(message);
-
-document.getElementById("msg").textContent = message;
+changeButton.addEventListener('click', () => {
+  messageParagraph.textContent = "The text has been changed using JavaScript!";
+});
